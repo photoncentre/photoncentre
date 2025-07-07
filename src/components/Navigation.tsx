@@ -25,7 +25,7 @@ const Navigation: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="text-2xl font-bold text-teal-500 font-heading flex items-center">
-            <img src="/public/media/images/Photon.jpg" alt="Photon" className="w-8 h-8 mr-2 rounded-full" />
+            <img src="/media/images/Photon.jpg" alt="Photon" className="w-8 h-8 mr-2 rounded-full" />
             Photon SCNSM
           </Link>
 

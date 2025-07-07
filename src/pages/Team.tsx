@@ -88,7 +88,7 @@ const Team: React.FC = () => {
       name: 'Hiba Hassan Hashim Erwa',
       role: 'Student Activities',
       affiliation: 'Computer Science',
-      image: '/public/media/images/team/X.png',
+      image: '/media/images/team/X.png',
     },
   
   ];
