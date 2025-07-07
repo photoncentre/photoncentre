@@ -6,7 +6,7 @@ const Header: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-center mb-4">
           <img 
-            src="/Photon.jpg" 
+            src="/public/media/images/Photon.jpg"  
             alt="Photon Scientific Centre Logo" 
             className="w-20 h-20 mr-4 rounded-full shadow-lg"
           />

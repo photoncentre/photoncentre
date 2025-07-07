@@ -8,7 +8,7 @@ const Team: React.FC = () => {
       role: 'Founder and Director',
       affiliation: 'African Institute for Mathematical Sciences (AIMS)',
       email: 'elbasher@aims.ac.za',
-      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg',
+      image: '/public/media/images/team/Basher_Mohammed.png',
       linkedin: 'https://www.linkedin.com/in/elbasher-mohammed-40b056162',
       website: 'Dr Basher.html'
     },
@@ -18,7 +18,7 @@ const Team: React.FC = () => {
       affiliation: 'PhD, Physics Department, Institute of Space Sciences (ICE-CSIC), Autonomous University of Barcelona (UAB), Spain',
       email: 'abubakryagob@gmail.com',
       website: 'https://www.abubakryagob.com/',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg',
+      image: '/public/media/images/team/Abubakr_Ibrahim.png',
       linkedin: 'https://www.linkedin.com/in/abubakr-ibrahim-05505280'
     },
     {
@@ -26,7 +26,7 @@ const Team: React.FC = () => {
       role: 'General Consultant',
       affiliation: 'Molecular Foundry and Materials Sciences Division, Lawrence Berkeley National Laboratory & Department of Physics, Omdurman Islamic University',
       email: 'malnourh@gmail.com',
-      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg',
+      image: '/public/media/images/team/Musa_Alnour.jpg',
       linkedin: 'https://www.linkedin.com/in/musa-hussien-80b08b76'
     },
     { 
@@ -35,7 +35,7 @@ const Team: React.FC = () => {
       affiliation: 'Postdoctoral Researcher @ DESY | PETRA IV',
       affiliation2: 'University of Hamburg',
       email: 'physics2harmony@gmail.com',
-      image: '/elaf_musa.jpg',
+      image: '/public/media/images/team/X.png',
       linkedin: 'https://www.linkedin.com/in/elaf-musa',
       researchgate: 'https://www.researchgate.net/profile/Elaf_Musa2'
     }
@@ -43,41 +43,54 @@ const Team: React.FC = () => {
 
   const team = [
     {
-      name: 'Ebtihal M. Mohamed',
-      role: 'Head of Social Media',
-      affiliation: 'Faculty of Education, University of Khartoum',
-      image: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg'
-    },
-    {
-      name: 'Gotayba A. Mohamed',
-      role: 'Media and Design',
-      affiliation: 'Sudan University of Science and Technology',
-      image: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg'
-    },
-    {
-      name: 'Alaa Hassan',
-      role: 'Content Creator',
+      name: 'Alaa Mohammed Idris Bakhit',
+      role: 'Academic Coordinator',
       affiliation: 'Faculty of Science, University of Khartoum',
-      image: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg'
+      image: '/public/media/images/team/Alaa.jpg'
+    },
+    {
+      name: 'Ebtihal Siraj M.O.',
+      role: 'Communication and designing',
+      affiliation: '',
+      image: '/public/media/images/team/Ebtihal.jpg',
     },
     {
       name: 'Maha M. Mousa',
-      role: 'Content Creator',
+      role: 'Services Consultant',
       affiliation: 'Faculty of Science, University of Khartoum',
-      image: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg'
+      image: '/public/media/images/team/Maha.png',
     },
     {
       name: 'Mohammed Yahya',
-      role: 'Website Developer',
+      role: 'Conferences & Workshops Director',
       affiliation: 'Computer Science',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg'
+      image: '/public/media/images/team/Mohammed_Yahya.jpg',
     },
     {
-      name: 'Miqdad M. A. Ibrahim',
-      role: 'Website Developer',
+      name: 'Hazim Elshiekh',
+      role: 'Scientific Projects Manager',
+      affiliation: 'Sudan University of Science and Technology',
+      image: '/public/media/images/team/Hazim_Elshiekh.jpg',
+    },
+    {
+      name: 'Gotayba A. Mohamed',
+      role: 'Student Activities',
+      affiliation: 'Sudan University of Science and Technology',
+      image: '/public/media/images/team/Gotyba.png',
+    },
+    {
+      name: 'Rayan ImadEldien Hussein Elfaki',
+      role: 'Student Activities',
+      affiliation: 'Student Activities',
+      image: '/public/media/images/team/X.png',
+    },
+    {
+      name: 'Hiba Hassan Hashim Erwa',
+      role: 'Student Activities',
       affiliation: 'Computer Science',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg'
-    }
+      image: '/public/media/images/team/X.png',
+    },
+  
   ];
 
   return (
