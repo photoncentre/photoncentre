@@ -73,9 +73,9 @@ const Team: React.FC = () => {
       image: '/media/images/team/Hazim_Elshiekh.jpg',
     },
     {
-      name: 'Gotayba A. Mohamed',
+      name: 'Gotiba Hamza',
       role: 'Student Activities',
-      affiliation: 'Sudan University of Science and Technology',
+      affiliation: '',
       image: '/media/images/team/Gotyba.png',
     },
     {

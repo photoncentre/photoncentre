@@ -81,7 +81,7 @@ const Home: React.FC = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-12">
             <img
-              src="/Photon.jpg"
+              src="/media/images/Photon.jpg"
               alt="Photon Scientific Centre"
               className="w-32 h-32 mx-auto rounded-full object-cover shadow-2xl border-4 border-white"
             />
