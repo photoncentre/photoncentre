@@ -1,5 +1,4 @@
 import React from 'react';
-import { Linkedin, ExternalLink, Mail } from 'lucide-react';
 
 const Team: React.FC = () => {
   const leadership = [
@@ -32,8 +31,7 @@ const Team: React.FC = () => {
     { 
       name: 'Dr. Elaf Musa',
       role: 'General Consultant',
-      affiliation: 'Postdoctoral Researcher @ DESY | PETRA IV',
-      affiliation2: 'University of Hamburg',
+      affiliation: 'Postdoctoral Researcher @ DESY | PETRA IV, University of Hamburg',
       email: 'physics2harmony@gmail.com',
       image: '/media/images/team/X.png',
       linkedin: 'https://www.linkedin.com/in/elaf-musa',
@@ -45,49 +43,53 @@ const Team: React.FC = () => {
     {
       name: 'Alaa Mohammed Idris Bakhit',
       role: 'Academic Coordinator',
-      affiliation: 'Faculty of Science, University of Khartoum',
+      affiliation: 'Research Assistant Materials Physics Center (MPC), San Sebastián, Basque Country, Spain',
       image: '/media/images/team/Alaa.jpg'
     },
     {
-      name: 'Ebtihal Siraj M.O.',
+      name: 'Ebtihal Siraj  M.O',
       role: 'Communication and designing',
-      affiliation: '',
-      image: '/media/images/team/Ebtihal.jpg',
+      affiliation: 'Master graduate student from Wuhan University of Technology, School of Science, Physics, Wuhan, China ',
+      email: 'oebtihal14@gmail.com',
+      website: 'https://hla-designer.my.canva.site/hla-for-services',
+      image: '/media/images/team/Ebtihal.png',
+      linkedin: 'https://www.linkedin.com/in/ebtihal-s-a08633158/'
     },
     {
       name: 'Maha M. Mousa',
       role: 'Services Consultant',
-      affiliation: 'Faculty of Science, University of Khartoum',
+      affiliation: '',
       image: '/media/images/team/Maha.png',
     },
     {
       name: 'Mohammed Yahya',
-      role: 'Conferences & Workshops Director',
-      affiliation: 'Computer Science',
+      role: 'Conferences & Workshops Coordinator',
+      email: 'mohammedyahyaact@gmail.com',
+      affiliation: 'Computer ScienceInstitute of space research and aerospace (ISRA), National Institute for Space Research(INPE): PhD Studen in Aerosol Atmospheric Rivers and Space climate',
       image: '/media/images/team/Mohammed_Yahya.jpg',
     },
     {
       name: 'Hazim Elshiekh',
       role: 'Scientific Projects Manager',
-      affiliation: 'Sudan University of Science and Technology',
+      affiliation: 'Sudan International University SIU, Sudanese National Energy Research Centre NERC',
       image: '/media/images/team/Hazim_Elshiekh.jpg',
     },
     {
       name: 'Gotiba Hamza',
       role: 'Student Activities',
-      affiliation: '',
+      affiliation: 'Faculty of Science, University of Khartoum',
       image: '/media/images/team/Gotyba.png',
     },
     {
       name: 'Rayan ImadEldien Hussein Elfaki',
       role: 'Student Activities',
-      affiliation: 'Student Activities',
+      affiliation: '',
       image: '/media/images/team/X.png',
     },
     {
       name: 'Hiba Hassan Hashim Erwa',
       role: 'Student Activities',
-      affiliation: 'Computer Science',
+      affiliation: 'Faculty of Science, University of Khartoum',
       image: '/media/images/team/X.png',
     },
   
@@ -105,7 +107,7 @@ const Team: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {leadership.map((member, index) => (
               <div
                 key={index}
@@ -126,27 +128,7 @@ const Team: React.FC = () => {
                   
                   <p className="text-green-600 font-semibold mb-3 text-lg">{member.role}</p>
                   
-                  <p className="text-gray-600 text-sm mb-4 leading-relaxed">{member.affiliation}</p>
-                  
-                  <a
-                    href={`mailto:${member.email}`}
-                    className="text-blue-600 hover:text-green-600 transition-colors text-sm mb-6 inline-block"
-                  >
-                    {member.email}
-                  </a>
-                  
-                  {member.website && (
-                    <div className="mb-6">
-                      <a
-                        href={member.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-600 hover:text-green-600 transition-colors text-sm"
-                      >
-                        {member.website}
-                      </a>
-                    </div>
-                  )}
+                  <p className="text-gray-600 text-sm mb-6 leading-relaxed">{member.affiliation}</p>
                   
                   <div className="flex justify-center space-x-4">
                     {member.linkedin && (
@@ -154,25 +136,37 @@ const Team: React.FC = () => {
                         href={member.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110"
+                        className="w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300"
                       >
-                        <Linkedin size={18} />
+                        <img
+                          src="/media/images/linkedin_icon.jpeg"
+                          alt="LinkedIn"
+                          className="w-10 h-10 rounded-full object-cover shadow-md hover:shadow-lg"
+                        />
                       </a>
                     )}
                     <a
                       href={`mailto:${member.email}`}
-                      className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 hover:bg-green-600 hover:text-white transition-all duration-300 transform hover:scale-110"
+                      className="w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300"
                     >
-                      <Mail size={18} />
+                      <img
+                        src="/media/images/email_icon.jpg"
+                        alt="Email"
+                        className="w-10 h-10 rounded-full object-cover shadow-md hover:shadow-lg"
+                      />
                     </a>
                     {member.website && (
                       <a
                         href={member.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-600 hover:text-white transition-all duration-300 transform hover:scale-110"
+                        className="w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300"
                       >
-                        <ExternalLink size={18} />
+                        <img
+                          src="/media/images/website_icon.jpg"
+                          alt="Website"
+                          className="w-10 h-10 rounded-full object-cover shadow-md hover:shadow-lg"
+                        />
                       </a>
                     )}
                   </div>
@@ -195,23 +189,62 @@ const Team: React.FC = () => {
             {team.map((member, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100"
+                className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-gray-100 relative overflow-hidden"
               >
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-blue-500"></div>
+                
                 <div className="text-center">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-24 h-24 rounded-full object-cover mx-auto mb-4 border-3 border-green-100 shadow-md hover:scale-105 transition-transform duration-300"
+                    className="w-24 h-24 rounded-full object-cover mx-auto mb-4 border-3 border-green-100 shadow-lg hover:scale-105 transition-transform duration-300"
                   />
                   
-                  <h3 className="text-lg font-bold text-blue-900 mb-2">{member.name}</h3>
+                  <h3 className="text-lg font-bold text-blue-900 mb-2 hover:text-green-600 transition-colors">{member.name}</h3>
                   <p className="text-green-600 font-semibold mb-2">{member.role}</p>
-                  <p className="text-gray-600 text-sm leading-relaxed">{member.affiliation}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-4">{member.affiliation}</p>
                   
-                  <div className="flex justify-center mt-4">
-                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110">
-                      <Linkedin size={16} />
-                    </div>
+                  <div className="flex justify-center space-x-3">
+                    {member.linkedin && (
+                      <a
+                        href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300"
+                      >
+                        <img
+                          src="/media/images/linkedin_icon.jpeg"
+                          alt="LinkedIn"
+                          className="w-8 h-8 rounded-full object-cover shadow-md hover:shadow-lg"
+                        />
+                      </a>
+                    )}
+                    {member.email && (
+                      <a
+                        href={`mailto:${member.email}`}
+                        className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300"
+                      >
+                        <img
+                          src="/media/images/email_icon.jpg"
+                          alt="Email"
+                          className="w-8 h-8 rounded-full object-cover shadow-md hover:shadow-lg"
+                        />
+                      </a>
+                    )}
+                    {member.website && (
+                      <a
+                        href={member.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300"
+                      >
+                        <img
+                          src="/media/images/website_icon.jpg"
+                          alt="Website"
+                          className="w-8 h-8 rounded-full object-cover shadow-md hover:shadow-lg"
+                        />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

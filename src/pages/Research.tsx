@@ -1,89 +1,101 @@
 import React from 'react';
-import { Atom, Telescope, Microscope, Cpu, Zap, Globe, Users, BookOpen } from 'lucide-react';
+import { Users, BookOpen, Globe } from 'lucide-react';
 
 const Research: React.FC = () => {
   const researchAreas = [
     {
-      icon: Atom,
       title: 'Theoretical Physics',
-      description: 'Advancing our understanding of fundamental physics through theoretical research and mathematical modeling.',
+      description: 'Advancing our understanding of fundamental physics through quantum mechanics, relativity, and fundamental particle physics.',
       topics: ['Quantum Field Theory', 'General Relativity', 'Particle Physics', 'String Theory'],
       publications: 15,
       researchers: 8,
+      image: '/media/images/research/theoretical-physics.jpg',
+      imageAlt: 'Quantum field visualization showing particle interactions',
+      credit: 'High-quality research illustration adapted from Nature Physics',
       color: 'from-teal-400 to-cyan-500'
     },
     {
-      icon: Telescope,
-      title: 'Astrophysics & Cosmology',
-      description: 'Exploring the universe from stellar evolution to the large-scale structure of the cosmos.',
+      title: 'Astronomy',
+      description: 'Observational astronomy, planetary science, and celestial mechanics with cutting-edge telescopic observations.',
+      topics: ['Exoplanet Detection', 'Stellar Observations', 'Planetary Science', 'Celestial Mechanics'],
+      publications: 8,
+      researchers: 5,
+      image: '/media/images/research/astronomy.webp',
+      imageAlt: 'Astronomical observations and celestial body imaging',
+      credit: 'High-quality astronomy illustration adapted from Nature Astronomy',
+      color: 'from-indigo-400 to-purple-500'
+    },
+    {
+      title: 'Astrophysics',
+      description: 'Exploring the universe from stellar evolution to the large-scale structure of the cosmos and cosmological phenomena.',
       topics: ['Dark Matter', 'Black Holes', 'Galaxy Formation', 'Cosmic Microwave Background'],
       publications: 12,
       researchers: 6,
+      image: '/media/images/research/astrophysics.jpg',
+      imageAlt: 'Galaxy formation and cosmic structure visualization',
+      credit: 'High-quality research illustration adapted from Nature Astronomy',
       color: 'from-blue-400 to-indigo-500'
     },
     {
-      icon: Microscope,
+      title: 'Experimental Physics',
+      description: 'Laboratory experiments, advanced instrumentation, and precision measurement techniques for fundamental research.',
+      topics: ['Precision Measurements', 'Laboratory Techniques', 'Instrumentation', 'Experimental Design'],
+      publications: 14,
+      researchers: 9,
+      image: '/media/images/research/Experimental-physics.jpg',
+      imageAlt: 'Laboratory equipment and experimental setup visualization',
+      credit: 'High-quality experimental physics illustration',
+      color: 'from-orange-400 to-red-500'
+    },
+    {
       title: 'Condensed Matter Physics',
       description: 'Investigating the properties of matter and materials at the quantum and macroscopic scales.',
       topics: ['Quantum Materials', 'Superconductivity', 'Nanotechnology', 'Phase Transitions'],
       publications: 18,
       researchers: 10,
+      image: '/media/images/research/condensed-matter.jpg',
+      imageAlt: 'Crystal structure and nanomaterial visualization',
+      credit: 'High-quality research illustration adapted from Nature Materials',
       color: 'from-purple-400 to-pink-500'
     },
     {
-      icon: Cpu,
       title: 'Computational Physics',
       description: 'Using advanced computational methods to solve complex physical problems and analyze data.',
       topics: ['Machine Learning', 'Numerical Simulations', 'Data Analysis', 'High-Performance Computing'],
       publications: 10,
       researchers: 7,
+      image: '/media/images/research/computational-physics.jpg',
+      imageAlt: 'Scientific simulation and data visualization',
+      credit: 'High-quality computational science illustration',
       color: 'from-green-400 to-emerald-500'
-    },
-    {
-      icon: Zap,
-      title: 'Energy & Environment',
-      description: 'Developing sustainable energy solutions and understanding environmental physics.',
-      topics: ['Solar Energy', 'Energy Storage', 'Climate Modeling', 'Renewable Technologies'],
-      publications: 8,
-      researchers: 5,
-      color: 'from-yellow-400 to-orange-500'
-    },
-    {
-      icon: Globe,
-      title: 'Metaphysics & Philosophy',
-      description: 'Exploring the philosophical foundations of physics and the nature of reality.',
-      topics: ['Consciousness Studies', 'Philosophy of Science', 'Quantum Consciousness', 'Reality Theory'],
-      publications: 6,
-      researchers: 4,
-      color: 'from-rose-400 to-red-500'
     }
   ];
 
   const collaborations = [
+    // {
+    //   institution: 'CERN',
+    //   country: 'Switzerland',
+    //   focus: 'Particle Physics Research',
+    //   status: 'Active'
+    // },
+    // {
+    //   institution: 'MIT',
+    //   country: 'United States',
+    //   focus: 'Quantum Computing',
+    //   status: 'Active'
+    // },
     {
-      institution: 'CERN',
-      country: 'Switzerland',
-      focus: 'Particle Physics Research',
-      status: 'Active'
-    },
-    {
-      institution: 'MIT',
-      country: 'United States',
-      focus: 'Quantum Computing',
-      status: 'Active'
-    },
-    {
-      institution: 'University of Cambridge',
-      country: 'United Kingdom',
-      focus: 'Theoretical Physics',
-      status: 'Active'
-    },
-    {
-      institution: 'Max Planck Institute',
-      country: 'Germany',
-      focus: 'Astrophysics',
+      institution: 'ICTP Physics Without Frontiers',
+      country: 'Italy',
+      focus: 'Educational Outreach & Capacity Building',
       status: 'Active'
     }
+    // {
+    //   institution: 'Max Planck Institute',
+    //   country: 'Germany',
+    //   focus: 'Astrophysics',
+    //   status: 'Active'
+    // }
   ];
 
   return (
@@ -100,18 +112,37 @@ const Research: React.FC = () => {
 
         {/* Research Areas Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
-          {researchAreas.map((area, index) => {
-            const IconComponent = area.icon;
-            return (
-              <div
-                key={index}
-                className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
-              >
-                <div className={`w-16 h-16 bg-gradient-to-br ${area.color} rounded-xl flex items-center justify-center mb-6 shadow-lg`}>
-                  <IconComponent className="w-8 h-8 text-white" />
+          {researchAreas.map((area, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+            >
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src={area.image}
+                  alt={area.imageAlt}
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                  onError={(e) => {
+                    // Fallback to gradient background if image fails to load
+                    e.currentTarget.style.display = 'none';
+                    const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                    if (fallback) {
+                      fallback.style.display = 'flex';
+                    }
+                  }}
+                />
+                <div className={`absolute inset-0 bg-gradient-to-br ${area.color} hidden items-center justify-center`}>
+                  <div className="text-white text-4xl font-bold opacity-80">
+                    {area.title.charAt(0)}
+                  </div>
                 </div>
-                
-                <h3 className="text-2xl font-bold text-slate-800 mb-4">{area.title}</h3>
+                <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h3 className="text-2xl font-bold text-white mb-2">{area.title}</h3>
+                </div>
+              </div>
+              
+              <div className="p-8">
                 <p className="text-slate-600 mb-6 leading-relaxed">{area.description}</p>
                 
                 <div className="mb-6">
@@ -128,7 +159,7 @@ const Research: React.FC = () => {
                   </div>
                 </div>
                 
-                <div className="flex justify-between items-center pt-4 border-t border-gray-100">
+                <div className="flex justify-between items-center pt-4 border-t border-gray-100 mb-4">
                   <div className="flex items-center space-x-4">
                     <div className="flex items-center text-slate-500 text-sm">
                       <BookOpen className="w-4 h-4 mr-1" />
@@ -140,9 +171,11 @@ const Research: React.FC = () => {
                     </div>
                   </div>
                 </div>
+                
+                <p className="text-xs text-slate-400 italic">{area.credit}</p>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
 
         {/* International Collaborations */}
@@ -188,7 +221,7 @@ const Research: React.FC = () => {
               <div className="w-20 h-20 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <BookOpen className="w-10 h-10 text-white" />
               </div>
-              <div className="text-3xl font-bold text-slate-800 mb-2">69+</div>
+              <div className="text-3xl font-bold text-slate-800 mb-2"></div>
               <div className="text-lg text-slate-600">Research Publications</div>
               <div className="text-sm text-slate-500 mt-2">In peer-reviewed journals</div>
             </div>
@@ -197,7 +230,7 @@ const Research: React.FC = () => {
               <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-10 h-10 text-white" />
               </div>
-              <div className="text-3xl font-bold text-slate-800 mb-2">40+</div>
+              <div className="text-3xl font-bold text-slate-800 mb-2">10+</div>
               <div className="text-lg text-slate-600">Active Researchers</div>
               <div className="text-sm text-slate-500 mt-2">Faculty and graduate students</div>
             </div>
@@ -206,7 +239,7 @@ const Research: React.FC = () => {
               <div className="w-20 h-20 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Globe className="w-10 h-10 text-white" />
               </div>
-              <div className="text-3xl font-bold text-slate-800 mb-2">15+</div>
+              <div className="text-3xl font-bold text-slate-800 mb-2">1+</div>
               <div className="text-lg text-slate-600">International Partners</div>
               <div className="text-sm text-slate-500 mt-2">Collaborative institutions</div>
             </div>
@@ -227,12 +260,6 @@ const Research: React.FC = () => {
                 className="bg-teal-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-teal-600 transition-all duration-300 transform hover:scale-105"
               >
                 Collaborate With Us
-              </a>
-              <a
-                href="/programs"
-                className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-slate-800 transition-all duration-300 transform hover:scale-105"
-              >
-                View Research Programs
               </a>
             </div>
           </div>

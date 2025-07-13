@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import Research from './pages/Research';
 import News from './pages/News';
 import Programs from './pages/Programs';
+import PWFSudanSeminars from './pages/PWFSudanSeminars';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/team" element={<Team />} />
             <Route path="/archive" element={<Archive />} />
+            <Route path="/archive/pwf-sudan-seminars" element={<PWFSudanSeminars />} />
             <Route path="/news" element={<News />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

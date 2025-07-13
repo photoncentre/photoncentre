@@ -84,6 +84,10 @@ const Archive: React.FC = () => {
     { id: 'workshop', label: 'Workshops' }
   ];
 
+  const handlePWFSudanClick = () => {
+    window.location.href = '/archive/pwf-sudan-seminars';
+  };
+
   return (
     <div className="min-h-screen py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
@@ -93,6 +97,25 @@ const Archive: React.FC = () => {
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8">
             Access our library of recorded lectures, seminars, and workshops
           </p>
+
+          {/* Featured PWF-Sudan Section */}
+          <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 text-white mb-12">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <span className="text-3xl">🌟</span>
+              <h2 className="text-3xl font-bold">Featured Collection</h2>
+            </div>
+            <h3 className="text-2xl font-semibold mb-4">Physics Without Frontiers - Sudan</h3>
+            <p className="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
+              Explore our comprehensive archive of the PWF-Sudan seminar series featuring world-class scientists covering diverse fields from environmental science to cosmology.
+            </p>
+            <a
+              href="/archive/pwf-sudan-seminars"
+              className="inline-flex items-center bg-white text-orange-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              Explore PWF-Sudan Seminars
+              <Play className="ml-2 w-5 h-5" />
+            </a>
+          </div>
 
           {/* Platform Links */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -132,6 +155,14 @@ const Archive: React.FC = () => {
               {filter.label}
             </button>
           ))}
+          
+          {/* PWF-Sudan Special Button */}
+          <button
+            onClick={handlePWFSudanClick}
+            className="px-6 py-3 rounded-full font-semibold transition-all duration-300 bg-gradient-to-r from-orange-500 to-red-500 text-white hover:from-orange-600 hover:to-red-600 shadow-lg transform hover:scale-105 flex items-center gap-2"
+          >
+            🌟 PWF-Sudan
+          </button>
         </div>
 
         {/* Video Grid */}

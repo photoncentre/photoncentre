@@ -7,71 +7,86 @@ const News: React.FC = () => {
 
   const newsArticles = [
     {
-      id: 1,
-      title: 'Breakthrough in Quantum Computing Research at Photon SCNSM',
-      excerpt: 'Our research team has achieved a significant milestone in quantum information processing, developing new algorithms that could revolutionize computational physics.',
-      content: 'The Photon Scientific Centre has announced a major breakthrough in quantum computing research...',
-      date: '2024-02-28',
-      author: 'Dr. Sarah Ahmed',
-      category: 'Research',
-      image: 'https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg',
-      featured: true
-    },
-    {
-      id: 2,
-      title: 'New International Collaboration with European Research Centers',
-      excerpt: 'Photon SCNSM announces strategic partnerships with leading European institutions to advance collaborative research in theoretical physics.',
-      content: 'We are excited to announce new collaborative agreements with several prestigious European research centers...',
-      date: '2024-02-25',
-      author: 'Prof. Mohamed Hassan',
+      id: 7,
+      title: 'Physics Without Frontiers – Sudan: Expanding Physics Horizons in Sudan',
+      excerpt: 'Six-week online seminar initiative in collaboration with ICTP\'s Physics Without Frontiers program, featuring 12 talks by world-class scientists from astrophysics to condensed matter physics.',
+      content: 'The Photon Centre for Natural Sciences and Metaphysics proudly launched a six-week online seminar initiative in collaboration with ICTP\'s Physics Without Frontiers (PWF) program. The series hosted 12 talks by world-class scientists in fields ranging from astrophysics to condensed matter physics, gathering Sudanese students and researchers from around the world.',
+      date: '2025-07-14',
+      author: 'Photon SCNSM Team',
       category: 'Collaboration',
-      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg',
-      featured: false
-    },
-    {
-      id: 3,
-      title: 'Spring 2024 Educational Programs Registration Opens',
-      excerpt: 'Registration is now open for our comprehensive spring semester programs, including advanced physics courses and computational workshops.',
-      content: 'We are pleased to announce that registration for our Spring 2024 educational programs is now open...',
-      date: '2024-02-20',
-      author: 'Dr. Fatima Al-Zahra',
-      category: 'Education',
-      image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg',
-      featured: false
-    },
-    {
-      id: 4,
-      title: 'Photon SCNSM Hosts International Physics Symposium',
-      excerpt: 'Over 200 researchers from 30 countries gathered for our annual international symposium on modern physics and emerging technologies.',
-      content: 'The annual International Physics Symposium hosted by Photon SCNSM was a tremendous success...',
-      date: '2024-02-15',
-      author: 'Dr. Ahmed Khalil',
-      category: 'Events',
-      image: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg',
-      featured: false
-    },
-    {
-      id: 5,
-      title: 'New Publication in Nature Physics on Dark Matter Research',
-      excerpt: 'Our astrophysics team publishes groundbreaking research on dark matter detection methods in the prestigious Nature Physics journal.',
-      content: 'We are proud to announce that our research on novel dark matter detection methods has been published...',
-      date: '2024-02-10',
-      author: 'Dr. Omar Mansour',
-      category: 'Research',
-      image: 'https://images.pexels.com/photos/2156/sky-earth-space-working.jpg',
-      featured: false
-    },
-    {
-      id: 6,
-      title: 'Student Achievement: International Physics Olympiad Success',
-      excerpt: 'Students from our educational programs achieve outstanding results at the International Physics Olympiad, bringing home multiple medals.',
-      content: 'We are delighted to share the exceptional achievements of our students at this year\'s International Physics Olympiad...',
-      date: '2024-02-05',
-      author: 'Dr. Layla Ibrahim',
-      category: 'Education',
-      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg',
-      featured: false
+      image: '/media/images/PWF_SUDAN_FinalPoster.jpeg',
+      featured: true,
+      duration: 'June 1 – July 14, 2025',
+      partner: 'ICTP, Italy',
+      link: 'https://indico.ictp.it/event/11030/overview',
+      poster: '/media/images/PWF_SUDAN_FinalPoster.jpeg'
     }
+    // {
+    //   id: 1,
+    //   title: 'Breakthrough in Quantum Computing Research at Photon SCNSM',
+    //   excerpt: 'Our research team has achieved a significant milestone in quantum information processing, developing new algorithms that could revolutionize computational physics.',
+    //   content: 'The Photon Scientific Centre has announced a major breakthrough in quantum computing research...',
+    //   date: '2024-02-28',
+    //   author: 'Dr. Sarah Ahmed',
+    //   category: 'Research',
+    //   image: 'https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg',
+    //   featured: false
+    // },
+    // {
+    //   id: 2,
+    //   title: 'New International Collaboration with European Research Centers',
+    //   excerpt: 'Photon SCNSM announces strategic partnerships with leading European institutions to advance collaborative research in theoretical physics.',
+    //   content: 'We are excited to announce new collaborative agreements with several prestigious European research centers...',
+    //   date: '2024-02-25',
+    //   author: 'Prof. Mohamed Hassan',
+    //   category: 'Collaboration',
+    //   image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg',
+    //   featured: false
+    // },
+    // {
+    //   id: 3,
+    //   title: 'Spring 2024 Educational Programs Registration Opens',
+    //   excerpt: 'Registration is now open for our comprehensive spring semester programs, including advanced physics courses and computational workshops.',
+    //   content: 'We are pleased to announce that registration for our Spring 2024 educational programs is now open...',
+    //   date: '2024-02-20',
+    //   author: 'Dr. Fatima Al-Zahra',
+    //   category: 'Education',
+    //   image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg',
+    //   featured: false
+    // },
+    // {
+    //   id: 4,
+    //   title: 'Photon SCNSM Hosts International Physics Symposium',
+    //   excerpt: 'Over 200 researchers from 30 countries gathered for our annual international symposium on modern physics and emerging technologies.',
+    //   content: 'The annual International Physics Symposium hosted by Photon SCNSM was a tremendous success...',
+    //   date: '2024-02-15',
+    //   author: 'Dr. Ahmed Khalil',
+    //   category: 'Events',
+    //   image: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg',
+    //   featured: false
+    // },
+    // {
+    //   id: 5,
+    //   title: 'New Publication in Nature Physics on Dark Matter Research',
+    //   excerpt: 'Our astrophysics team publishes groundbreaking research on dark matter detection methods in the prestigious Nature Physics journal.',
+    //   content: 'We are proud to announce that our research on novel dark matter detection methods has been published...',
+    //   date: '2024-02-10',
+    //   author: 'Dr. Omar Mansour',
+    //   category: 'Research',
+    //   image: 'https://images.pexels.com/photos/2156/sky-earth-space-working.jpg',
+    //   featured: false
+    // },
+    // {
+    //   id: 6,
+    //   title: 'Student Achievement: International Physics Olympiad Success',
+    //   excerpt: 'Students from our educational programs achieve outstanding results at the International Physics Olympiad, bringing home multiple medals.',
+    //   content: 'We are delighted to share the exceptional achievements of our students at this year\'s International Physics Olympiad...',
+    //   date: '2024-02-05',
+    //   author: 'Dr. Layla Ibrahim',
+    //   category: 'Education',
+    //   image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg',
+    //   featured: false
+    // }
   ];
 
   const categories = ['all', 'Research', 'Education', 'Collaboration', 'Events'];
@@ -85,6 +100,14 @@ const News: React.FC = () => {
 
   const featuredArticle = newsArticles.find(article => article.featured);
   const regularArticles = filteredNews.filter(article => !article.featured);
+  
+  // Show featured article in category view if it matches the selected category
+  const showFeaturedInCategory = featuredArticle && 
+    selectedCategory !== 'all' && 
+    featuredArticle.category === selectedCategory &&
+    (searchTerm === '' || 
+     featuredArticle.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+     featuredArticle.excerpt.toLowerCase().includes(searchTerm.toLowerCase()));
 
   return (
     <div className="min-h-screen py-20">
@@ -127,12 +150,13 @@ const News: React.FC = () => {
         </div>
 
         {/* Featured Article */}
-        {featuredArticle && selectedCategory === 'all' && !searchTerm && (
+        {featuredArticle && (selectedCategory === 'all' || showFeaturedInCategory) && !searchTerm && (
           <div className="mb-16">
             <div className="bg-gradient-to-r from-teal-500 to-cyan-600 rounded-2xl p-8 text-white mb-8">
               <div className="flex items-center gap-2 mb-4">
+                <span className="text-2xl">📰</span>
                 <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm font-semibold">
-                  Featured
+                  Featured Collaboration
                 </span>
                 <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">
                   {featuredArticle.category}
@@ -141,7 +165,34 @@ const News: React.FC = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div>
                   <h2 className="text-3xl font-bold mb-4">{featuredArticle.title}</h2>
-                  <p className="text-lg opacity-90 mb-6">{featuredArticle.excerpt}</p>
+                  <p className="text-lg opacity-90 mb-4">{featuredArticle.excerpt}</p>
+                  
+                  {/* Special information for Physics Without Frontiers */}
+                  {featuredArticle.duration && featuredArticle.partner && (
+                    <div className="bg-white bg-opacity-10 rounded-lg p-4 mb-6">
+                      <div className="flex flex-wrap gap-3 text-sm">
+                        <span className="flex items-center">
+                          📅 <span className="ml-1 font-medium">{featuredArticle.duration}</span>
+                        </span>
+                        <span className="flex items-center">
+                          🌍 <span className="ml-1 font-medium">In partnership with {featuredArticle.partner}</span>
+                        </span>
+                      </div>
+                      {featuredArticle.poster && (
+                        <div className="mt-3">
+                          <a 
+                            href={featuredArticle.poster} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-white hover:text-gray-200 text-sm font-medium underline"
+                          >
+                            📄 View Program Poster
+                          </a>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                  
                   <div className="flex items-center gap-4 text-sm opacity-80 mb-6">
                     <div className="flex items-center gap-1">
                       <User className="w-4 h-4" />
@@ -156,17 +207,48 @@ const News: React.FC = () => {
                       })}
                     </div>
                   </div>
-                  <button className="bg-white text-teal-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center gap-2">
-                    Read Full Article
-                    <ArrowRight className="w-4 h-4" />
-                  </button>
+                  
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <button className="bg-white text-teal-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center gap-2">
+                      Read Full Article
+                      <ArrowRight className="w-4 h-4" />
+                    </button>
+                    {featuredArticle.link && (
+                      <a
+                        href={featuredArticle.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white bg-opacity-20 text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-30 transition-colors inline-flex items-center gap-2 border border-white border-opacity-30"
+                      >
+                        🔗 Event Overview (Indico)
+                        <ArrowRight className="w-4 h-4" />
+                      </a>
+                    )}
+                  </div>
                 </div>
                 <div>
-                  <img
-                    src={featuredArticle.image}
-                    alt={featuredArticle.title}
-                    className="w-full h-64 object-cover rounded-xl shadow-lg"
-                  />
+                  {featuredArticle.image.endsWith('.pdf') ? (
+                    <div className="w-full h-64 bg-white bg-opacity-10 rounded-xl shadow-lg flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="text-6xl mb-4">📄</div>
+                        <p className="text-lg font-semibold">Program Poster</p>
+                        <a 
+                          href={featuredArticle.image} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-sm underline hover:text-gray-200 mt-2 block"
+                        >
+                          Click to view PDF
+                        </a>
+                      </div>
+                    </div>
+                  ) : (
+                    <img
+                      src={featuredArticle.image}
+                      alt={featuredArticle.title}
+                      className="w-full h-64 object-cover rounded-xl shadow-lg"
+                    />
+                  )}
                 </div>
               </div>
             </div>
@@ -175,6 +257,40 @@ const News: React.FC = () => {
 
         {/* News Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Featured article as special card when category is selected and search matches */}
+          {showFeaturedInCategory && searchTerm && (
+            <div className="md:col-span-2 lg:col-span-3 mb-8">
+              <div className="bg-gradient-to-r from-teal-500 to-cyan-600 rounded-xl p-6 text-white">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="text-xl">📰</span>
+                  <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full text-xs font-semibold">
+                    Featured Collaboration
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold mb-3">{featuredArticle.title}</h3>
+                <p className="text-sm opacity-90 mb-4 line-clamp-2">{featuredArticle.excerpt}</p>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4 text-xs opacity-80">
+                    <span>📅 {featuredArticle.duration}</span>
+                    <span>🌍 {featuredArticle.partner}</span>
+                  </div>
+                  <div className="flex gap-2">
+                    {featuredArticle.link && (
+                      <a
+                        href={featuredArticle.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white bg-opacity-20 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-opacity-30 transition-colors"
+                      >
+                        🔗 View Event
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+          
           {regularArticles.map((article) => (
             <div
               key={article.id}
