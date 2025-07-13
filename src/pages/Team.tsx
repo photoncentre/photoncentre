@@ -56,7 +56,7 @@ const Team: React.FC = () => {
       linkedin: 'https://www.linkedin.com/in/ebtihal-s-a08633158/'
     },
     {
-      name: 'Maha M. Mousa',
+      name: 'MAHA OSMAN MOHAMED ALI',
       role: 'Services Consultant',
       affiliation: '',
       image: '/media/images/team/Maha.png',
